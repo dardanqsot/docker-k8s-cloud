@@ -1,0 +1,4 @@
+kubectl apply -f  ../../proyecto/k8s/punto-04/curl-deployment.yaml
+kubectl get pods -o wide
+kubectl exec -it curl-pod sh 
+  $ curl http://192.168.1.2:8080/api/personas/2
