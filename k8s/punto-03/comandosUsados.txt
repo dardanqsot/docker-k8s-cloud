@@ -1,0 +1,3 @@
+kubectl apply -f ../../proyecto/k8s/punto-03/punto03-deployment.yaml 
+kubectl get pods
+kubectl get pod api-persona-pod -o yaml
