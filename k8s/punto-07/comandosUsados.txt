@@ -1,0 +1,12 @@
+kubectl apply -f  ../../proyecto/k8s/punto-06/configmap-app.yaml
+kubectl apply -f  ../../proyecto/k8s/punto-06/configmap-bdd.yaml
+kubectl apply -f  ../../proyecto/k8s/punto-06/pod-api-persona.yaml 
+kubectl apply -f  ../../proyecto/k8s/punto-06/pod-mysql.yaml 
+kubectl apply -f  ../../proyecto/k8s/punto-06/service-api-persona.yaml 
+kubectl apply -f  ../../proyecto/k8s/punto-06/service-bdd.yaml 
+kubectl apply -f  ../../proyecto/k8s/punto-06/curl-deployment.yaml 
+
+kubectl -n name1 get svc
+kubectl -n name1 get pods
+
+# curl http://172.21.5.46:80/api/personas/2
